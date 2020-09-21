@@ -13,17 +13,17 @@
 .main-info {
   padding: 50px;
 }
-
 .main-info-title {
   display: flex;
   justify-content: center;
   font-size: 44px;
   margin-bottom: 20px;
+  text-align: center;
 }
-
 .main-info-subtitle {
   display: flex;
   justify-content: center;
   font-size: 28px;
   margin-bottom: 10px;
+  text-align: center;
 }
