@@ -1,14 +1,36 @@
-.rs-container, .rs-header, .rs-content, .rs-footer, .rs-navbar {
+.rs-container, .rs-header, .rs-content, .rs-footer, .rs-navbar, .rs-nav {
   background: none !important;
 }
-.navbar-brand {
-  padding: 18px 20px;
-  display: inline-block;
+.rs-nav .rs-nav-item, .rs-nav .rs-dropdown-toggle {
+  height: auto !important;
+  padding: 18px 22px;
+  color: #575757;
+  font-size: 24px;
   text-decoration: none;
+}
+.rs-nav .rs-dropdown-toggle {
+  padding-right: 46px !important;
+}
+.rs-nav .rs-dropdown-toggle-caret {
+  top: 20px;
+  right: 20px;
+}
+.navbar-brand {
+  display: inline-block;
+  text-decoration: none !important;
+  color: #575757 !important;
   font-size: 24px;
 }
 .navbar-brand:hover {
   text-decoration: none;
+  color: #575757;
+}
+.rs-nav .rs-dropdown {
+  padding-top: 7px;
+  float: right;
+}
+.rs-nav-waterline {
+  display: none;
 }
 .rs-content {
   justify-content: center;
