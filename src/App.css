@@ -90,17 +90,34 @@
   width: 100%;
   padding: 20px;
   font-size: 22px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 480px) {
+  .page-content {
+    font-size: 24px;
+  }
 }
 .page-content-image {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+}
+@media only screen and (min-width: 992px) {
+  .page-content-image {
+    justify-content: flex-end;
+  }
 }
 .page-image {
   max-width: 500px;
+  height: auto;
 }
 @media only screen and (max-width: 1200px) {
   .page-image {
     max-width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .page-image {
+    max-height: 350px;
   }
 }
 .page-content-text  {
