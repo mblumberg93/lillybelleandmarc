@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import 'rsuite/dist/styles/rsuite-default.css';
-import { Navbar } from 'rsuite';
 import Nav from "@rsuite/responsive-nav";
 import { Container, Header, Content, Footer } from 'rsuite';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from './Home';
+import Couple from './Couple';
 
 function App() {
   return (
@@ -15,19 +15,22 @@ function App() {
           <Header>
             <Nav appearance='subtle' moreProps={{ placement: "bottomEnd" }}>
               <Nav.Item eventKey="Home">
-                <Link to="/" className="navbar-brand">LillyBelle And Marc</Link>
+                <Link to="/" className="navbar-option navbar-brand">LillyBelle And Marc</Link>
               </Nav.Item>
-              <Nav.Item eventKey="Home">
-                <Link to="/" className="navbar-brand">People</Link>
+              <Nav.Item eventKey="Couple">
+                <Link to="/couple" className="navbar-option">The Couple</Link>
               </Nav.Item>
-              <Nav.Item eventKey="Home">
-                <Link to="/" className="navbar-brand">Venue</Link>
+              <Nav.Item eventKey="Venue">
+                <Link to="/" className="navbar-option">The Venue</Link>
               </Nav.Item>
-              <Nav.Item eventKey="Home">
-                <Link to="/" className="navbar-brand">Logistics</Link>
+              <Nav.Item eventKey="Details">
+                <Link to="/" className="navbar-option">Event Details</Link>
               </Nav.Item>
-              <Nav.Item eventKey="Home">
-                <Link to="/" className="navbar-brand">COVID</Link>
+              <Nav.Item eventKey="Things">
+                <Link to="/" className="navbar-option">Things To Do</Link>
+              </Nav.Item>
+              <Nav.Item eventKey="COVID">
+                <Link to="/" className="navbar-option">COVID-19</Link>
               </Nav.Item>
             </Nav>
             </Header>
@@ -35,6 +38,9 @@ function App() {
             <Switch>
               <Route exact path="/">
                 <Home></Home>
+              </Route>
+              <Route exact path="/couple">
+                <Couple></Couple>
               </Route>
             </Switch>
           </Content>
