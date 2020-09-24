@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from './Home';
 import Couple from './Couple';
 import Venue from './Venue';
+import Details from './Details';
+import Sac from './Sac';
+import Covid from './Covid';
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
           <Header>
             <Nav appearance='subtle' moreProps={{ placement: "bottomEnd" }}>
               <Nav.Item eventKey="Home">
-                <Link to="/" className="navbar-option navbar-brand">LillyBelle And Marc</Link>
+                <Link to="/" className="navbar-option navbar-brand">
+                  <span class="navbar-brand-desktop">LillyBelle And Marc</span>
+                  <span class="navbar-brand-mobile">LB &amp; M</span>
+                </Link>
               </Nav.Item>
               <Nav.Item eventKey="Couple">
                 <Link to="/couple" className="navbar-option">The Couple</Link>
@@ -25,13 +31,13 @@ function App() {
                 <Link to="/venue" className="navbar-option">The Venue</Link>
               </Nav.Item>
               <Nav.Item eventKey="Details">
-                <Link to="/" className="navbar-option">Event Details</Link>
+                <Link to="/details" className="navbar-option">Event Details</Link>
               </Nav.Item>
               <Nav.Item eventKey="Sac">
-                <Link to="/" className="navbar-option">SacTown</Link>
+                <Link to="/sac" className="navbar-option">SacTown</Link>
               </Nav.Item>
               <Nav.Item eventKey="COVID">
-                <Link to="/" className="navbar-option">COVID-19</Link>
+                <Link to="/covid" className="navbar-option">COVID-19</Link>
               </Nav.Item>
             </Nav>
             </Header>
@@ -45,6 +51,15 @@ function App() {
               </Route>
               <Route exact path="/venue">
                 <Venue></Venue>
+              </Route>
+              <Route exact path="/details">
+                <Details></Details>
+              </Route>
+              <Route exact path="/sac">
+                <Sac></Sac>
+              </Route>
+              <Route exact path="/covid">
+                <Covid></Covid>
               </Route>
             </Switch>
           </Content>

@@ -24,6 +24,16 @@
 .navbar-brand {
   text-shadow: 1px 1px #b3b3b3
 }
+@media only screen and (max-width: 480px) {
+  .navbar-brand-desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .navbar-brand-mobile {
+    display: none;
+  }
+}
 .navbar-option:hover {
   text-decoration: none;
   color: #575757;
@@ -118,6 +128,16 @@
     max-width: 100%;
   }
 }
+@media only screen and (max-width: 900px) {
+  .page-image {
+    max-height: 900px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .page-image {
+    max-height: 500px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .page-image {
     max-height: 350px;
@@ -140,5 +160,6 @@
   }
 }
 .page-header {
+  text-align: center;
   margin-bottom: 10px;
 }
