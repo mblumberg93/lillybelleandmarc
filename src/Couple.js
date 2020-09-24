@@ -4,6 +4,7 @@ import { Grid, Row, Col } from 'rsuite';
 function Couple() {
   return (
     <div class="page-container">
+        <h2 class="page-header">LillyBelle And Marc</h2>
         <Grid fluid>
             <Row className="show-grid">
                 <Col xs={24} sm={24} md={12}>
