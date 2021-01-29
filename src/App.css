@@ -15,14 +15,14 @@
   top: 20px;
   right: 20px;
 }
-.navbar-option {
-  display: inline-block;
+.navbar-option a {
+  display: inline-block !important;
   text-decoration: none !important;
   color: #575757 !important;
-  font-size: 24px;
+  font-size: 24px !important;
 }
-.navbar-brand {
-  text-shadow: 1px 1px #b3b3b3
+.navbar-brand a {
+  text-shadow: 1px 1px #b3b3b3;
 }
 @media only screen and (max-width: 480px) {
   .navbar-brand-desktop {
@@ -34,9 +34,9 @@
     display: none;
   }
 }
-.navbar-option:hover {
-  text-decoration: none;
-  color: #575757;
+.navbar-option a:hover {
+  text-decoration: none !important;
+  color: #575757 !important;
 }
 .rs-nav .rs-dropdown {
   padding-top: 7px;

@@ -3,18 +3,18 @@ import { Grid, Row, Col } from 'rsuite';
  
 function Couple() {
   return (
-    <div class="page-container">
-        <h2 class="page-header">LillyBelle And Marc</h2>
+    <div className="page-container">
+        <h2 className="page-header">LillyBelle And Marc</h2>
         <Grid fluid>
             <Row className="show-grid">
                 <Col xs={24} sm={24} md={12}>
-                    <div class="page-content page-content-image">
-                        <img class="image page-image" alt="" src="./couple.jpg" />
+                    <div className="page-content page-content-image">
+                        <img className="image page-image" alt="" src="./couple.jpg" />
                     </div>
                 </Col>
                 <Col xs={24} sm={24} md={12}>
-                    <div class="page-content">
-                        <div class="page-content-text">
+                    <div className="page-content">
+                        <div className="page-content-text">
                             <p>LillyBelle and Marc met at the beginning of their freshman year at Claremont McKenna College.</p>
                             <p>As NCAA swimmers, they initially bonded over their shared love of the sport and competitive drive.</p>
                             <p>Over their four years, they earned dozens of combined awards and honors - concluding with both being voted Most Inspirational by their teammates in their senior year.</p>
