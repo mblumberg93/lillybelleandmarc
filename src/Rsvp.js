@@ -14,11 +14,17 @@ function Rsvp() {
         let rsvpForm = Object.assign({}, formData)
         rsvpForm.attending = attending;
         setEnteringData(false);
-        emailjs.send(emailconfig.SERVICE_ID, emailconfig.TEMPLATE_ID, rsvpForm, emailconfig.USER_ID)
+        emailjs.send(emailconfig.SERVICE_ID, emailconfig.RSVP_TEMPLATE_ID, rsvpForm, emailconfig.USER_ID)
         .then((result) => {
-            console.log(result.text);
+            console.log('RSVP response: ' + result.text);
         }, (error) => {
-            console.log(error.text);
+            console.log('RSVP response: ' + error.text);
+        });
+        emailjs.send(emailconfig.SERVICE_ID, emailconfig.CONFIRMATION_TEMPLATE_ID, rsvpForm, emailconfig.USER_ID)
+        .then((result) => {
+            console.log('Confirmation response: ' + result.text);
+        }, (error) => {
+            console.log('Confirmation response: ' + error.text);
         });
     }
 
