@@ -143,13 +143,16 @@
     max-height: 350px;
   }
 }
-.page-content-text  {
+.page-content-text {
   max-width: 500px;
 }
 @media only screen and (max-width: 1200px) {
   .page-content-text  {
     max-width: 100%;
   }
+}
+.page-content-text-full {
+  max-width: 100%;
 }
 .page-text {
   max-width: 500px;
@@ -162,4 +165,20 @@
 .page-header {
   text-align: center;
   margin-bottom: 10px;
+}
+.page-form {
+  width: 50%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .page-form {
+    width: 100%;
+  }
+}
+.submission-message {
+  margin: 20px 0;
 }

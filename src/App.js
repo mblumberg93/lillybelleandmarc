@@ -10,6 +10,7 @@ import Venue from './Venue';
 import Details from './Details';
 import Sac from './Sac';
 import Covid from './Covid';
+import Rsvp from './Rsvp'
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
               </Route>
               <Route exact path="/covid">
                 <Covid></Covid>
+              </Route>
+              <Route exact path="/rsvp">
+                <Rsvp></Rsvp>
               </Route>
             </Switch>
           </Content>
