@@ -10,7 +10,12 @@ import Venue from './Venue';
 import Details from './Details';
 import Sac from './Sac';
 import Covid from './Covid';
-import Rsvp from './Rsvp'
+import Rsvp from './Rsvp';
+import ReactGA from 'react-ga';
+import RouteChangeTracker from './components/RouteChangeTracker';
+
+const TRACKING_ID = "UA-170071530-1";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   return (
@@ -54,6 +59,8 @@ function App() {
                 <Rsvp></Rsvp>
               </Route>
             </Switch>
+            <RouteChangeTracker>
+            </RouteChangeTracker>
           </Content>
           <Footer>
           </Footer>
