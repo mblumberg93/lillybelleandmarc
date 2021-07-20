@@ -51,7 +51,7 @@ function Rsvp() {
                                 <HelpBlock tooltip>This is simply a name for your party. Examples include "Williams Family", "Lauren and David", and "Matt Valentine".</HelpBlock>
                             </FormGroup>
                             <FormGroup>
-                                <ControlLabel>Number of Guests in Your Party</ControlLabel>
+                                <ControlLabel>Number of Guests in Your Party (including yourself)</ControlLabel>
                                 <FormControl name="guests" />
                             </FormGroup>
                             <FormGroup>

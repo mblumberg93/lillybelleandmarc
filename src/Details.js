@@ -34,6 +34,12 @@ function Details() {
                                 <p>Dinner will be provided by GyroStop, a Sacramento area Mediterranean fusion food truck. There will be vegan options. The selections will include gyro, chicken, falafel, rice, salad, dolmas, and fries.</p>
                                 <p>Wine will be provided by Heringer Estates and the offerings will be hand-picked by LillyBelle and Marc. Beer and non-alcoholic beverages will be provided as well.</p>
                             </div>
+                            <div className="details-section">
+                                <h3>Other Events</h3>
+                                <p>For those arriving early there will be an informal dinner Thursday evening in Sacramento. Time will be approximately 6:30pm and location is yet to be determined.</p>
+                                <p>Family members and members of the wedding party will have additional wedding-related events Friday, both during the day and in the evening. Contact LillyBelle and/or Marc if you have questions.</p>
+                                <p>We highly encourage you to reach out and connect with other attendees outside of the scheduled wedding events, be it family or old friends!</p>
+                            </div>
                         </div>
                     </div>
                 </Col>
