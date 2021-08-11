@@ -36,8 +36,12 @@ function Details() {
                             </div>
                             <div className="details-section">
                                 <h3>Other Events</h3>
-                                <p>For those arriving early there will be an informal dinner Thursday evening in Sacramento. Time will be approximately 6:30pm and location is yet to be determined.</p>
-                                <p>Family members and members of the wedding party will have additional wedding-related events Friday, both during the day and in the evening. Contact LillyBelle and/or Marc if you have questions.</p>
+                                <p>For those that are arriving early there are two other organized events for all wedding guests.</p>
+                                <p><b>Thursday Evening</b></p>
+                                <p>There will be an informal dinner Thursday evening in Sacramento at local favorite Oak Park Brewing in Sacramento from 6:30pm to 8:30pm. As we said, it will be simply a casual get together for friends and family to enjoy catching up over a pint, but feel free to reach out to LillyBelle and/or Marc if you have questions.</p>
+                                <p><b>Friday Daytime</b></p>
+                                <p>Friday we will be having a picnic lunch in one of Sacramento's picturesque riverside parks. Details are still being finalized, but we are tentatively planning on having a picnic at Ancil Hoffman Park on the American River Parkway from Noon to 3pm. Stay tuned for more info.</p>
+                                <p>Family members and members of the wedding party will have additional wedding-related events Friday evening. Contact LillyBelle and/or Marc if you have questions.</p>
                                 <p>We highly encourage you to reach out and connect with other attendees outside of the scheduled wedding events, be it family or old friends!</p>
                             </div>
                         </div>

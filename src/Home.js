@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Notification } from 'rsuite';
  
 function Home() {
+
+  useEffect(() => {
+    Notification.open({
+      title: 'Updates!',
+      duration: 0,
+      description: <><p>First, we have recently added information on additional events for all wedding guests  on Thursday and Friday. Please see the Event Details page for more info.</p><p>Second, we have just added a Registry page for those who are interested in that.</p></>
+    });
+  });
+
+
   return (
     <div className="page-container">
       <div className="main-info">

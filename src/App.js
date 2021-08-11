@@ -11,6 +11,7 @@ import Details from './Details';
 import Sac from './Sac';
 import Covid from './Covid';
 import Rsvp from './Rsvp';
+import Registry from './Registry';
 import ReactGA from 'react-ga';
 import RouteChangeTracker from './components/RouteChangeTracker';
 
@@ -31,6 +32,7 @@ function App() {
               <Nav.Item eventKey="Couple" href="/couple" className="navbar-option">The Couple</Nav.Item>
               <Nav.Item eventKey="Venue" href="/venue" className="navbar-option">The Venue</Nav.Item>
               <Nav.Item eventKey="Details" href="/details" className="navbar-option">Event Details</Nav.Item>
+              <Nav.Item eventKey="Registry" href="/registry" className="navbar-option">Registry</Nav.Item>
               <Nav.Item eventKey="Sac" href="/sac" className="navbar-option">SacTown</Nav.Item>
               <Nav.Item eventKey="COVID" href="/covid" className="navbar-option">COVID-19</Nav.Item>
             </Nav>
@@ -57,6 +59,9 @@ function App() {
               </Route>
               <Route exact path="/rsvp">
                 <Rsvp></Rsvp>
+              </Route>
+              <Route exact path="/registry">
+                <Registry></Registry>
               </Route>
             </Switch>
             <RouteChangeTracker>
